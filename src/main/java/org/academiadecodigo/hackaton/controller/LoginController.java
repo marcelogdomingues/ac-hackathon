@@ -41,7 +41,7 @@ public class LoginController {
 
         } else {
 
-            mav = new ModelAndView("/error/error");
+            mav = new ModelAndView("/services/register");
 
         }
 
