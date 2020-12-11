@@ -25,6 +25,7 @@ public class LoginServiceImpl implements LoginService {
         for (ClientModel c : fakeDatabase.getClientList()) {
             if (c.getPassword().equals(loginDTO.getPassword())) {
                 clientModel = c;
+                break;
             }
         }
         return clientModel;

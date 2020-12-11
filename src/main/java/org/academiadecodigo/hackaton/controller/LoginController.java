@@ -37,8 +37,9 @@ public class LoginController {
         if(clientModel != null){
             mav = new ModelAndView("services/welcome");
             mav.addObject("username", clientModel.getUsername());
-        } else {
 
+        } else {
+            mav = new ModelAndView();
         }
 
         return mav;
