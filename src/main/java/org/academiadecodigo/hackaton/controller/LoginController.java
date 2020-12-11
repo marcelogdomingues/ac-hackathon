@@ -27,8 +27,8 @@ public class LoginController {
         return mav;
     }
 
-    @RequestMapping(method = RequestMethod.POST, path = "/loginProcess")
-    public ModelAndView auth(@ModelAttribute("logindto") LoginDTO loginDTO){
+    @RequestMapping(method = RequestMethod.GET, path = "/loginProcess")
+    public String auth(@ModelAttribute("logindto") LoginDTO loginDTO){
 
         ModelAndView mav = null;
 
@@ -44,8 +44,7 @@ public class LoginController {
             mav = new ModelAndView("/services/register");
 
         }
-
-        return mav;
+        return "redirect:/services/services";
     }
 
 
