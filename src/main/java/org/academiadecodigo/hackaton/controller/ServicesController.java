@@ -9,8 +9,8 @@ import org.springframework.web.servlet.ModelAndView;
 public class ServicesController {
 
     @RequestMapping(method = RequestMethod.GET, value = "/services")
-    public ModelAndView services(){
-        return new ModelAndView("/services/services");
+    public String services(){
+        return "services/services";
     }
 
 }

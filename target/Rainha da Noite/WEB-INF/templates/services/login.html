@@ -34,7 +34,7 @@
                 <img  th:src="@{/resources/images/img-01.png}" alt="IMG">
             </div>
 
-            <form class="login-form" th:object="${logindto}" th:action="@{/}" method="post">
+            <form class="login-form" th:object="${logindto}" th:action="@{/services}" method="get">
 					<span class="login100-form-title">
 						Member Login
 					</span>
@@ -55,7 +55,7 @@
                 </div>
 
                 <div class="container-login100-form-btn">
-                    <button class="login100-form-btn">
+                    <button type="submit" class="login100-form-btn">
                         Login
                     </button>
                 </div>
@@ -70,7 +70,7 @@
                 </div>
 
                 <div class="text-center p-t-136">
-                    <a class="txt2" href="#">
+                    <a class="txt2" href="/register">
                         Create your Account
                         <i class="fa fa-long-arrow-right m-l-5" aria-hidden="true"></i>
                     </a>
