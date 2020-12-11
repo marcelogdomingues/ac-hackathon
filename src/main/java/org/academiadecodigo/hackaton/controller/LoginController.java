@@ -35,11 +35,11 @@ public class LoginController {
         ClientModel clientModel = loginService.validate(loginDTO);
 
         if(clientModel != null){
-            mav = new ModelAndView("services/welcome");
+            mav = new ModelAndView("services/services");
             mav.addObject("username", clientModel.getUsername());
 
         } else {
-            mav = new ModelAndView();
+            mav = new ModelAndView("error/error");
         }
 
         return mav;
