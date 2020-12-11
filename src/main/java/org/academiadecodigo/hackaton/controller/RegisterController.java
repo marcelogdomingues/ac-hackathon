@@ -43,7 +43,7 @@ public class RegisterController {
 
         clientService.add(clientModel);
 
-        return new ModelAndView("/services/welcome", "user", clientModel.getUsername());
+        return new ModelAndView("/services/services", "user", clientModel.getUsername());
 
     }
 }
