@@ -27,7 +27,7 @@ public class LoginController {
         return mav;
     }
 
-    @RequestMapping(method = RequestMethod.GET, path = "/loginProcess")
+    @RequestMapping(method = RequestMethod.GET, path = "/services")
     public String auth(@ModelAttribute("logindto") LoginDTO loginDTO){
 
         ModelAndView mav = null;
