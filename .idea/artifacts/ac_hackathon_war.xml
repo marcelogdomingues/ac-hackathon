@@ -1,0 +1,14 @@
+<component name="ArtifactManager">
+  <artifact type="war" name="ac-hackathon:war">
+    <output-path>$PROJECT_DIR$/target</output-path>
+    <properties id="maven-jee-properties">
+      <options>
+        <module>ac-hackathon</module>
+        <packaging>war</packaging>
+      </options>
+    </properties>
+    <root id="archive" name="Rainha da Noite.war">
+      <element id="artifact" artifact-name="ac-hackathon:war exploded" />
+    </root>
+  </artifact>
+</component>
