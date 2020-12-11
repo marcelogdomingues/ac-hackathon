@@ -10,8 +10,7 @@ public class ServicesController {
 
     @RequestMapping(method = RequestMethod.GET, value = "/services")
     public ModelAndView services(){
-        ModelAndView mav = new ModelAndView("/services/services");
-        return mav;
+        return new ModelAndView("/services/services");
     }
 
 }
